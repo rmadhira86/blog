@@ -1,0 +1,16 @@
+{% assign title_class = include.title_class | default: "aside-title" %}
+{% assign list_class = include.list_class | default: "aside-tags" %}
+{% capture tags %}
+    {% for cat in page.tags %}{{cat | strip }} {% endfor %}
+{% endcapture %}
+{% assign sorted_tags = tags | strip | split:' ' | sort_natural %}
+<h3 class="{{title_class}}">Tags</h3>
+<ul class="{{list_class}} list-unstyled">
+    {% for tag in sorted_tags %}
+       {% assign catwords = tag | split: "-" %}
+       <li><a href="/{{tag}}">
+        {% for word in catwords %}{{word | capitalize}} {% endfor %}
+         [{{site.tags[tag].size}}]
+        </a></li> 
+    {% endfor %}
+</ul>

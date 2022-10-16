@@ -1,0 +1,18 @@
+{% assign title_class = include.title_class | default: "aside-title" %}
+{% assign list_class = include.list_class | default: "aside-links" %}
+{% capture categories %}
+    {% for cat in site.categories %}
+       {{cat[0]}} 
+    {% endfor %}
+{% endcapture %}
+{% assign sorted_categories = categories | split:' ' | sort %}
+<h3 class="{{title_class}}">Categories</h3>
+<ul class="{{list_class}} list-unstyled">
+    {% for cat in sorted_categories %}
+       {% assign catwords = cat | split: "-" %}
+       <li><a href="/{{cat}}"><i class="bi bi-chevron-right"></i>
+        {% for word in catwords %}{{word | capitalize}} {% endfor %}
+         [{{site.categories[cat].size}}]
+        </a></li> 
+    {% endfor %}
+</ul>

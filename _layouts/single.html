@@ -1,0 +1,59 @@
+---
+layout: default
+---
+  <main id="main">
+
+    <section class="single-post-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 post-content" data-aos="fade-up">
+
+            <!-- ======= Single Post Content ======= -->
+            <div class="single-post">
+              <div class="post-meta"><span class="date">{{page.categories[0] | replace: '-',' '}}</span> 
+                <span class="mx-1">&bullet;</span> <span>{{page.date | date: "%b %d, '%y"}}</span></div>
+              <h1 class="mb-5">{{page.title}}</h1>
+              {{content}}
+            </div><!-- End Single Post Content -->
+
+          </div>
+          <div class="col-md-3">
+            <div class="aside-block">
+              {% include sidebar-posts.html %}
+            </div>
+            {% if page.video_url %}
+            <div class="aside-block">
+              <h3 class="aside-title">Video</h3>
+              <div class="video-post">
+                <a href="{{page.video_url}}" class="glightbox link-video">
+                  <span class="bi-play-fill"></span>
+                  <img src="{{page.video_img}}" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Video -->
+            {% endif %}
+
+            <div class="aside-block">
+              {% include category-list.html %}
+            </div><!-- End Categories -->
+
+            <div class="aside-block">
+              {% include tags-list.html %}
+              <!-- <h3 class="aside-title">Tags</h3>
+              <ul class="aside-tags list-unstyled">
+                <li><a href="category.html">Business</a></li>
+                <li><a href="category.html">Culture</a></li>
+                <li><a href="category.html">Sport</a></li>
+                <li><a href="category.html">Food</a></li>
+                <li><a href="category.html">Politics</a></li>
+                <li><a href="category.html">Celebrity</a></li>
+                <li><a href="category.html">Startups</a></li>
+                <li><a href="category.html">Travel</a></li>
+              </ul> -->
+            </div><!-- End Tags -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main><!-- End #main -->

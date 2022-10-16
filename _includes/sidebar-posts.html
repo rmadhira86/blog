@@ -1,0 +1,127 @@
+<!-- ======= Sidebar ======= -->
+
+    <ul class="nav nav-pills custom-tab-nav mb-4" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-related-tab" data-bs-toggle="pill" data-bs-target="#pills-related" type="button" role="tab" aria-controls="pills-related" aria-selected="true">You may enjoy</button>
+        </li>
+        <!-- <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-trending-tab" data-bs-toggle="pill" data-bs-target="#pills-trending" type="button" role="tab" aria-controls="pills-trending" aria-selected="false">Trending</button>
+        </li> -->
+        <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-latest-tab" data-bs-toggle="pill" data-bs-target="#pills-latest" type="button" role="tab" aria-controls="pills-latest" aria-selected="false">Latest</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+
+        <!-- Related -->
+        <div class="tab-pane fade show active" id="pills-related" role="tabpanel" aria-labelledby="pills-related-tab">
+        {% assign rel_counter = 0 %}
+        {% assign rel_max = site.limits.related | default: 5 %}
+        {% assign tag_match_min = site.limits.tag_match | default: 2 %}
+        {% assign shown_pages = "" | split: "," %} <!-- required since liquid doesn't have syntax for empty arrays -->
+        <!-- If related pages are specified, show all of those first -->
+        {% if page.related %}
+            {% for related in page.related %}
+            {% assign rel_page = site.posts | where: "path", related | first %}
+            {% if rel_page %}
+            {% assign rel_counter = rel_counter | plus: 1 %}
+            {% assign shown_pages = shown_pages | push: rel_page.url %}
+        <div class="post-entry-1 border-bottom">
+            <div class="post-meta">
+            <span class="date">{{rel_page.categories[0] | replace: '-',' ' }}</span> 
+            <span class="mx-1">&bullet;</span> 
+            <span>{{rel_page.date | date: "%b %d, '%y"}}</span>
+            <!-- <span class="mx-1">&bullet;</span> 
+            <span class="date">Rel</span>  -->
+        </div>
+            <h2 class="mb-2"><a href="{{rel_page.url}}">{{ rel_page.title }}</a></h2>
+            <span class="author mb-3 d-block">{{rel_page.author | default: site.author}}</span>
+        </div>
+            {% endif %}
+            {% endfor %}
+        {% endif %}
+        {% if rel_counter < rel_max %}
+            <!-- List the latest posts that match minimum number of tags -->
+            {% for post in site.posts %}
+                {% if post.url != page.url %}
+                {% assign tagmatch_counter = 0 %}
+                {% for tag in post.tags %}
+                    {% if page.tags contains tag %}
+                        {% assign tagmatch_counter = tagmatch_counter | plus: 1 %}
+                    {% endif %}
+                {% endfor %}
+                {% if tagmatch_counter >= tag_match_min %}
+                    {% unless shown_pages contains post.url %}
+                    {% assign rel_counter = rel_counter | plus: 1 %}
+                    {% assign shown_pages = shown_pages | push: post.url %}
+                    <div class="post-entry-1 border-bottom">
+                    <div class="post-meta">
+                        <span class="date">{{post.categories[0] | replace: '-',' ' }}</span> 
+                        <span class="mx-1">&bullet;</span> 
+                        <span clsss="date">{{post.date | date: "%b %d, '%y"}}</span>
+                        <!-- <span class="mx-1">&bullet;</span> 
+                        <span class="date">Tag</span>  -->
+                    </div>
+                    <h2 class="mb-2"><a href="{{post.url}}">{{ post.title }}</a></h2>
+                    <span class="author mb-3 d-block">{{post.author | default: site.author}}</span>
+                    </div>    
+                    {% endunless %}                        
+                {% endif %}
+                {% if rel_counter >= rel_max %}
+                    {% break %}
+                {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+            <!-- If we still don't have minimum number of posts related posts, fill from same category -->
+        {% if rel_counter < rel_max %}
+            {% for category in page.categories %}
+                {% assign posts = site.categories[category] %}
+                {% for post in posts %}
+                {% if post.url != page.url %}
+                    {% unless shown_pages contains post.url %}
+                    {% assign rel_counter = rel_counter | plus: 1 %}
+                    <!-- Not really required since this is the last set. However, helpful to have in case we move the order of category match vs tag match-->
+                    {% assign shown_pages = shown_pages | push: post.url %}
+                    <div class="post-entry-1 border-bottom">
+                    <div class="post-meta">
+                        <span class="date">{{post.categories[0] | replace: '-',' ' }}</span> 
+                        <span class="mx-1">&bullet;</span> 
+                        <span class="date">{{post.date | date: "%b %d, '%y"}}</span>
+                        <!-- <span class="mx-1">&bullet;</span> 
+                        <span class="date">Category</span>  -->
+
+                    </div>
+                    <h2 class="mb-2"><a href="{{post.url}}">{{ post.title }}</a></h2>
+                    <span class="author mb-3 d-block">{{post.author | default: site.author}}</span>
+                    </div>                               
+                    {% endunless %}
+                {% endif %}
+                {% if rel_counter >= rel_max %}
+                    {% break %}
+                {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+
+        </div> <!-- End Related -->
+
+
+        <!-- Latest -->
+        <div class="tab-pane fade" id="pills-latest" role="tabpanel" aria-labelledby="pills-latest-tab">
+        {% assign latest_limit = site.limits.latest | default: 10 %}
+        {% for post in site.posts limit: latest_limit %}
+        <div class="post-entry-1 border-bottom">
+            <div class="post-meta">
+            <span class="date">{{post.categories[0] | replace: '-',' ' }}</span> 
+            <span class="mx-1">&bullet;</span> 
+            <span>{{post.date | date: "%b %d, '%y"}}</span></div>
+            <h2 class="mb-2"><a href="{{post.url}}">{{post.title}}</a></h2>
+            <span class="author mb-3 d-block">{{post.author | default: site.author}}</span>
+        </div>
+        {% endfor %}
+        </div> <!-- End Latest -->
+
+    </div>
