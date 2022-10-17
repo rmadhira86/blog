@@ -2,7 +2,7 @@
 layout: single
 title: 13 Amazing Technology Poems from Shel Silverstein with Valuable Life Lessons
 description: 13 Amazing Technology Poems from Shel Silverstein with Valuable Life Lessons
-image: /assets/img/post-landscape-1.jpg
+image: /assets/img/post-landscape-6.jpg
 
 tags:
   - Hello

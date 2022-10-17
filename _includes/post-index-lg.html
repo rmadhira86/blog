@@ -1,0 +1,16 @@
+{% assign post = include.post %}
+<div class="post-entry-1 lg">
+    {% if post.image %}
+        <a href="{{post.url}}">
+            <img src="{{post.image}}" alt="Image for {{post.title}}" class="img-fluid">
+        </a>
+    {% endif %}
+    <div class="post-meta">
+      <span class="date">{{post.categories[0] | replace: "-"," "}}</span> 
+      <span class="mx-1">&bullet;</span> 
+      <span>{{post.date | date: "%b %d, '%y"}}</span>
+    </div>
+    <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+    <p class="mb-4 d-block">{{post.excerpt | strip_html}}</p>
+    {% include author.html author=post.author %}
+</div>

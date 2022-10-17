@@ -1,4 +1,4 @@
 ---
 layout: category
-category: business
+category: data-science
 ---

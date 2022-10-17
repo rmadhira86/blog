@@ -1,0 +1,19 @@
+{% assign author_key = include.author | default: site.author %}
+{% assign display = include.display | default: "img-name" %}
+{% unless author_key %}
+   {% if site.data.authors %}
+     {% for key in site.data.authors limit: 1 %}
+      {% assign author_key = key[0] %}
+     {% endfor %}
+   {% endif %}
+{% endunless %}
+{% assign author = site.data.authors[author_key] %}
+
+{% if display == "name" %}
+  <span class="author">{{author.name}}</span>
+{% else %}
+<div class="d-flex align-items-center author">
+  <div class="photo"><img src="{{author.image}}" alt="" class="img-fluid"></div>
+  <div class="name"><h3 class="m-0 p-0">{{author.name}}</h3></div>
+</div>
+{% endif %}

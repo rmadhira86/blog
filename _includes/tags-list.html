@@ -1,16 +1,37 @@
 {% assign title_class = include.title_class | default: "aside-title" %}
 {% assign list_class = include.list_class | default: "aside-tags" %}
-{% capture tags %}
-    {% for cat in page.tags %}{{cat | strip }} {% endfor %}
-{% endcapture %}
-{% assign sorted_tags = tags | strip | split:' ' | sort_natural %}
+{% assign show_count = include.show_count | default: "false" %}
+{% assign tag_type = include.type | default: "page" %}
+{% assign tag_category = include.category %}
+{% if tag_type == "category" and tag_category %}
+    {% assign tags = "" | split: "," %}
+    {% for post in site.categories[tag_category] %}
+        {% for tag in post.tags %}
+            {% unless tags contains tag %}
+                {% assign tags = tags | push: tag %}
+            {% endunless %}
+        {% endfor %}
+    {% endfor %}
+{% elsif tag_type == "site" %}
+    {% capture tags %}
+        {% for tag in site.tags %}{{tag[0]}} {% endfor %}
+    {% endcapture %} 
+    {% assign tags = tags | strip | split:' ' %}
+{% else %}
+    {% assign post = include.post | default: page %}
+    {% capture tags %}
+        {% for cat in post.tags %}{{cat | strip }} {% endfor %}
+    {% endcapture %}
+    {% assign tags = tags | strip | split:' ' %}
+{% endif %}
+{% assign sorted_tags = tags | sort_natural %}
 <h3 class="{{title_class}}">Tags</h3>
 <ul class="{{list_class}} list-unstyled">
     {% for tag in sorted_tags %}
        {% assign catwords = tag | split: "-" %}
        <li><a href="/{{tag}}">
         {% for word in catwords %}{{word | capitalize}} {% endfor %}
-         [{{site.tags[tag].size}}]
+        {% if show_count == "true" %}[{{site.tags[tag].size}}]{% endif %}
         </a></li> 
     {% endfor %}
 </ul>

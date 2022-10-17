@@ -2,21 +2,19 @@
 layout: single
 title: 13 Amazing Data Science 2 Poems from Shel Silverstein with Valuable Life Lessons
 description: 13 Amazing Data Science Poems from Shel Silverstein with Valuable Life Lessons
-image: /assets/img/post-landscape-1.jpg
+image: /assets/img/post-landscape-3.jpg
 
 tags:
    - poems
    - amazing
-   - Shel Silverstein
+   - Shel-Silverstein
 ---
 L
 {: .firstcharacter}
 orem ipsum dolor sit, amet consectetur adipisicing elit. Ratione officia sed, suscipit distinctio, numquam omnis quo fuga ipsam quis inventore voluptatum recusandae culpa, unde doloribus saepe labore alias voluptate expedita? Dicta delectus beatae explicabo odio voluptatibus quas, saepe qui aperiam autem obcaecati, illo et! Incidunt voluptas culpa neque repellat sint, accusamus beatae, cumque autem tempore quisquam quam eligendi harum debitis.
 
 
-| ![](/assets/img/post-landscape-1.jpg){: class="img-fluid my-4"} |  
-|:--:|  
-| ***Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odit?*** |  
+{% include show-image.html src="/assets/img/post-landscape-3.jpg" caption="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odit?" %}
 
 
 Sunt reprehenderit, hic vel optio odit est dolore, distinctio iure itaque enim pariatur ducimus. Rerum soluta, perspiciatis voluptatum cupiditate praesentium repellendus quas expedita exercitationem tempora aliquam quaerat in eligendi adipisci harum non omnis reprehenderit quidem beatae modi. Ea fugiat enim libero, ipsam dicta explicabo nihil, tempore, nulla repellendus eos necessitatibus eligendi corporis cum? Eaque harum, eligendi itaque numquam aliquam soluta.
@@ -29,9 +27,7 @@ Dolorum, incidunt! Adipisci harum itaque maxime dolores doloremque porro eligend
               
 Est soluta veritatis laboriosam, consequuntur temporibus asperiores, fugit id a ullam sed, expedita sequi doloribus fugiat. Odio et necessitatibus enim nam, iste reprehenderit cupiditate omnis ut iure aliquid obcaecati, repellendus nemo provident eveniet tempora minus! Voluptates aut laboriosam, maiores nihil accusantium, a dolorum quaerat tenetur illo eum culpa cum laudantium sunt doloremque modi possimus magni? Perferendis cum repudiandae corrupti porro.
 
-|![](/assets/img/post-landscape-2.jpg){: class="img-fluid my-4"}|  
-|:--:|  
-|***Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odit?***|   
+{% include show-image.html src="/assets/img/post-landscape-4.jpg" caption="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odit?" %}
 
 Quis molestiae, dolorem consequuntur labore perferendis enim accusantium commodi optio, sequi magnam ad consectetur iste omnis! Voluptatibus, quia officia esse necessitatibus magnam tempore reprehenderit quo aspernatur! Assumenda, minus dolorem repellendus corporis corrupti quia temporibus repudiandae in. Sit rem aut, consectetur repudiandae perferendis nemo alias, iure ipsam omnis quam soluta, nobis animi quis aliquam blanditiis at. Dicta nemo vero sequi exercitationem.
 
