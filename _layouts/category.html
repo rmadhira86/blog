@@ -21,9 +21,8 @@ layout: default
                   <span>{{post.date |  date: "%b %d, '%y"}}</span></div>
                 <h3><a href="{{post.url}}">{{post.title}}</a></h3>
                 <p>{{post.excerpt | strip_html}}</p>
-                {% include tags-list.html page=post %}
-
-                {% include author.html author=post.author show_count="false" %}
+                {% include tags-list.html page=post show_count="false" title_class="post-tag-title" list_class="post-tags" %}
+                {% include author.html author=post.author  %}
               </div>
             </div>
             {% endfor %}

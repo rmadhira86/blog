@@ -303,6 +303,15 @@
   border-bottom: none;
 }
 
+.post-tag-title {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-bottom: none;
+}
+
 
 .custom-pagination {
   a {
@@ -416,3 +425,22 @@
     }
   }
 }
+
+.post-tags {
+  li {
+    display: inline-block;
+    a {
+      display: inline-block;
+      color: rgba(var(--color-black-rgb), .7);
+      padding: 3px 3px;
+      border: 1px solid rgba(var(--color-black-rgb), .1);
+      margin-bottom: 1px;
+      transition: .3s all ease;
+      &:hover, &:focus {
+        color: rgba(var(--color-black-rgb), 1);
+        border: 1px solid rgba(var(--color-black-rgb), .5);
+      }
+    }
+  }
+}
+

@@ -29,7 +29,8 @@
 <ul class="{{list_class}} list-unstyled">
     {% for tag in sorted_tags %}
        {% assign catwords = tag | split: "-" %}
-       <li><a href="/{{tag}}">
+       {% capture tag_url %}/tags/#{{tag | slugify | downcase }}{% endcapture %}
+       <li><a href="{{ tag_url | relative_url }}">
         {% for word in catwords %}{{word | capitalize}} {% endfor %}
         {% if show_count == "true" %}[{{site.tags[tag].size}}]{% endif %}
         </a></li> 

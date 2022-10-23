@@ -1,0 +1,13 @@
+{% assign tab_name = include.tab %}
+{% assign tab_label = include.label %}
+{% if include.active == tab_name %}
+   {% assign active_class = "active" %}
+   {% assign selected = "true" %}
+{% else %}
+   {% assign active_class = "" %}
+   {% assign selected = "" %}
+{% endif %}
+
+<li class="nav-item" role="presentation">
+    <button class="nav-link {{active_class}}" id="pills-{{tab_name}}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{tab_name}}" type="button" role="tab" aria-controls="pills-{{tab_name}}" aria-selected="{{selected}}">{{tab_label}}</button>
+</li>

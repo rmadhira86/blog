@@ -31,14 +31,20 @@ author: manohar
 
 permalink: none 
 
-# Build settings
-plugins:
-  - jekyll-feed
-
 limits:
    related: 5
    latest: 5
    tag_match: 2
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Build config 
+sass:
+  sass_dir: assets/css      #Folder where Syntactically Awesome StyleSheet files are located
+  style: compressed
+     
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
