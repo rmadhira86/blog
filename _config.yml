@@ -18,16 +18,45 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your custom title
+title: Manohar Madhira
+tagline: Musings of a Jack of many, master of some
+logo: /assets/img/logo.png
+copyright: Manohar Madhira
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Thoughts / musings of a Jack of many, master of some. Here you will find 
+  my thoughts and learning on various fields of life - 
+  business operations, health, technology, relations and many more. 
+  Come delve in a little, share your thoughts and let us grow together.  
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://manoharmadhira.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 author: manohar
+
+social:
+  links:
+    - label: Github
+      class: github
+      icon: bi bi-github
+      url: https://github.com/rmadhira86/
+    - label: Linked-In
+      class: linkedin
+      icon: bi bi-linkedin
+      url: https://www.linkedin.com/in/manohar-madhira/
+    # - label: Twitter
+    #   class: twitter
+    #   icon: bi bi-twitter
+    #   url: https://twitter.com/WatDaDuck_
+    # - label: Facebook
+    #   class: facebook
+    #   icon: bi bi-facebook
+    #   url: https://www.facebook.com/DonaldDuck/
+    # - label: Instagram
+    #   class: instagram
+    #   icon: bi bi-instagram
+    #   url: https://www.instagram.com/donaldduckweekblad/
+
+      
 
 permalink: none 
 
@@ -35,6 +64,13 @@ limits:
    related: 5
    latest: 5
    tag_match: 2
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "<!--more-->"
+incremental: false
 
 # Build settings
 plugins:
@@ -44,6 +80,9 @@ plugins:
 sass:
   sass_dir: assets/css      #Folder where Syntactically Awesome StyleSheet files are located
   style: compressed
+
+include:
+  - _pages
      
 # Exclude from processing.
 # The following items will not be processed, by default.

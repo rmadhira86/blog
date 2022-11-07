@@ -1,0 +1,12 @@
+{% capture categories %}
+    {% for cat in site.categories %}
+       {{cat[0]}} 
+    {% endfor %}
+{% endcapture %}
+{% assign sorted_categories = categories | split:' ' | sort %}
+<h3 class="footer-heading">Navigation</h3>
+<ul class="footer-links list-unstyled">
+    {% for nav in site.data.navigation.nav-bar %}
+        <li><a href="{% if nav.url %}{{nav.url}}{% else %}#{% endif %}">{{nav.title}}</a></li>
+    {% endfor %}
+</ul>

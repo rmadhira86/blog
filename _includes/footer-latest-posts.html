@@ -1,0 +1,20 @@
+{% assign show_posts = include.show | default: 5 %}
+<h3 class="footer-heading">Recent Posts</h3>
+
+<ul class="footer-links footer-blog-entry list-unstyled">
+  {% for post in site.posts limit: show_posts %}  
+  <li>
+    <a href="{{post.url}}" class="d-flex align-items-center">
+      <img src="{{post.image | relative_url}}" alt="" class="img-fluid me-3">
+      <div>
+        <div class="post-meta d-block">
+            <span class="date">{{post.categories[0]}}</span> 
+            <span class="mx-1">&bullet;</span> 
+            <span>{{post.date | date: "%b %d, '%y"}}</span></div>
+        <span>{{post.title}}</span>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
