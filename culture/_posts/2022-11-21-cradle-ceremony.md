@@ -13,12 +13,20 @@ tags:
 ---
 I
 {: .firstcharacter}
-n southern Indian tradition, children are placed in a Jhoola (Hindi), Uyyaala (Telugu), and Thottil (Tamil) when they are 21 to 29 days old. Learn how to create a traditional Jhoola or cradle in a top-floor building in the US costing less than fifteen dollars in less than 15 minutes, with only one trip to a Home Depot or Lowes. 
+n southern Indian tradition, children are placed in a Jhoola (Hindi), Uyyaala (Telugu), or Thottil (Tamil) when they are 21 to 29 days old. Learn how to create a traditional Jhoola or cradle in a top-floor building in the US costing less than fifteen dollars in less than 15 minutes, with only one trip to a Home Depot or Lowes. 
 
 <!--more-->
 {% include show-image.html src="/assets/img/blog/cradle.jpg" caption="Photo by author, Edited using PowerPoint" alt="Saree cradle" %}
 
-This Jhoola is tested with 40 lbs (18 kg) weight, which is twice the expected weight of the child in the Jhoola.
+This Jhoola is tested with 40 lbs (18 kg) weight, which is twice the expected weight of the child in the Jhoola.  
+
+## Background  
+In southern Indian tradition, children are placed in a Jhoola (Hindi), Uyyaala (Telugu), or Thottil (Tamil) when they are 21 to 29 days old. It is an event for friends and family to visit and bless the child. The event also signifies the first time the baby sleeps away from the mother, letting the mother carry out other activities during the day while the baby enjoys a blissful sleep.  
+
+For a baby, sleeping in a Jhoola in the first few weeks after birth has many advantages. The swing gives a womb-like experience, making the baby comfortable and at ease. The swinging sensations trigger a deep and instinctive relaxation, ensuring the baby gets a good sleep.  
+
+Jhoola does have some disadvantages and risks. Please research and follow all the necessary precautions before placing your child in a Jhoola. I summarize the precautions at the end of this article.
+
 
 ## Items Needed  
 
@@ -38,27 +46,23 @@ This Jhoola is tested with 40 lbs (18 kg) weight, which is twice the expected we
 Drill  
 Drill bits: 1/2", 11/32\" (approx.)  
 Handsaw or Universal cutting tool  
-Wood file and/or Sand paper
+Wood file and/or Sand paper  
 Ladder  
+
+
 
 ## Quick Steps
 Follow the below steps if you want to repeat what I did. Read detailed instructions to learn more about the culture and to understand the material selection rationale.  
 
 1.	Drill a 1/2 in. hole at an appropriate location.  
 2.	Insert the [Fliptoggle](https://www.homedepot.com/p/FLIPTOGGLE-1-4-in-x-2-1-2-in-Toggle-Bolt-2-Pack-425S/206347698){:target="_blank"}, push the toggle through the above hole, push the head to the ceiling, and break off the extra plastic. (Detailed instructions available on the package).  
-3.	Place the [fender washer](https://www.homedepot.com/p/Everbilt-1-4-in-x-1-1-4-in-Zinc-Plated-Fender-Washer-804796/204632767){:target="_blank"} in the (eye-bolt)(https://www.homedepot.com/p/Everbilt-1-4-in-x-5-in-Zinc-Plated-Eye-Bolt-with-Nut-807166/204273493){:target="_blank"} and tighten the eye-bolt into the Fliptoggle.
+3.	Place the [fender washer](https://www.homedepot.com/p/Everbilt-1-4-in-x-1-1-4-in-Zinc-Plated-Fender-Washer-804796/204632767){:target="_blank"} in the [Eye bolt](https://www.homedepot.com/p/Everbilt-1-4-in-x-5-in-Zinc-Plated-Eye-Bolt-with-Nut-807166/204273493){:target="_blank"} and tighten the eye-bolt into the Fliptoggle.
 4.	Loop the Saree through the Ring, and hold the ends together. Tie an [overhand Knot](https://www.animatedknots.com/overhand-knot){:target="_blank"} with both ends. Secure with one or two [square knots](https://www.animatedknots.com/square-knot){:target="_blank"}.  
 5.	Connect the Quick Link, Extension Spring (optional) to the eye-bolt. 
 6.	Attach the Ring with the saree to the extension spring or directly to the quick link.  
 7.	Cut a 1/2 in. x 1.5 in. slot at each end of the wood. On either side of the slot, drill two 11/32 in. or larger holes. Place the wood at any desired height in the Jhoola and pass the saree through the slots. Pass a thread through the small holes and tie it to the saree.
 8.	Load-test the setup. A 40 lb. / 50 lb. rice or wheat bag works best, as it weighs about the same as a 4.5 year or 5-year-old child.  
 
-## Background  
-In southern Indian tradition, children are placed in a Jhoola (Hindi), Uyyaala (Telugu), and Thottil (Tamil) when they are 21 to 29 days old. It is an event for friends and family to visit and bless the child. The event also signifies the first time the baby sleeps away from the mother, letting the mother carry out other activities during the day while the baby enjoys a blissful sleep.  
-
-For a baby, sleeping in a Jhoola in the first few weeks after birth has many advantages. The swing gives a womb-like experience, making the baby comfortable and at ease. The swinging sensations trigger a deep and instinctive relaxation, ensuring the baby gets a good sleep.  
-
-Jhoola does have some disadvantages and risks. Please research and follow all the necessary precautions before placing your child in a Jhoola. I summarize the precautions at the end of this article.
 
 ## Material Selection and Detailed Instructions  
 
@@ -81,12 +85,18 @@ See [Cobra Anchors - Fliptoggle](https://www.youtube.com/watch?v=W4x58ZIqa6Q) to
 
 **Options considered but not recommended**  
 
-  | Option | Pros | Cons |
-  |:-------|:-----|:------|
-  |[Steel ceiling swivel driller hook](https://www.homedepot.com/p/COBRA-90-lb-White-Steel-Ceiling-Swivel-Driller-Hook-59908/202259541){:target="_blank"} |Easy to install. No drilling required. High safe load.| Some risk of swing coming off the hook during movement. |  
-  |[Toggle bolt fastener](https://www.homedepot.com/p/1-4-in-x-5-in-Zinc-Plated-Toggle-Bolt-with-Round-Head-Phillips-Drive-Screw-2-Pieces-817421/204273389){:target="_blank"}| Can be used with stud or on drywall. Comes in different lengths. | Not recommended for overhead loads. Requires 5/8 in. drill bit, while most drill bit sets include bits up to 1/2 in. only|  
+[Steel ceiling swivel driller hook](https://www.homedepot.com/p/COBRA-90-lb-White-Steel-Ceiling-Swivel-Driller-Hook-59908/202259541){:target="_blank"}  
 
-See [Flip Toggle vs Toggle Bolt Video](Snap Toggle vs Toggle Bolt | Flip Toggle vs Snap Toggle Anchor Install) to compare between the Flip toggle and Toggle bolt fastener.
+  **Pros**: Easy to install. No drilling required. High safe load.  
+  
+  **Cons**: Some risk of swing coming off the hook during movement.  
+
+[Toggle bolt fastener](https://www.homedepot.com/p/1-4-in-x-5-in-Zinc-Plated-Toggle-Bolt-with-Round-Head-Phillips-Drive-Screw-2-Pieces-817421/204273389){:target="_blank"}
+
+**Pros**: Can be used with stud or on drywall. Comes in different lengths. 
+**Cons**: Not recommended for overhead loads. Requires 5/8 in. drill bit, while most drill bit sets include bits up to 1/2 in. only  
+
+See [Flip Toggle vs Toggle Bolt Video](https://www.youtube.com/watch?v=iYsDrY7L3G8) to compare between the Flip toggle and Toggle bolt fastener.
 
 ### Assemble the Saree and Ring
  See video on the right for a demo.
