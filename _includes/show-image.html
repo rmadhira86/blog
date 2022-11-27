@@ -1,4 +1,9 @@
 {% assign fig_class = include.class | default: "my-4" %}
+{% if include.src contains "://" %}
+    {% assign src = include.src %}
+{% else %}
+    {% assign src = include.src | prepend:site.baseurl %}
+{% endif %}
 <figure class="{{fig_class}}">
     {% if include.url %}<a href="{{include.url}}" target="_blank">{% endif %}
     <img src="{{include.src}}" alt="{{include.alt}}" class="img-fluid">

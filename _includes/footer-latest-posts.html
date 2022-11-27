@@ -4,8 +4,8 @@
 <ul class="footer-links footer-blog-entry list-unstyled">
   {% for post in site.posts limit: show_posts %}  
   <li>
-    <a href="{{post.url}}" class="d-flex align-items-center">
-      <img src="{{post.image | relative_url}}" alt="" class="img-fluid me-3">
+    <a href="{{post.url | prepend:site.baseurl}}" class="d-flex align-items-center">
+      <img src="{{post.image | prepend:site.baseurl}}" alt="" class="img-fluid me-3">
       <div>
         <div class="post-meta d-block">
             <span class="date">{{post.categories[0]}}</span> 

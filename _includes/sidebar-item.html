@@ -7,6 +7,6 @@
     <!-- <span class="mx-1">&bullet;</span> 
     <span class="date">Rel</span>  -->
 </div>
-    <h2 class="mb-2"><a href="{{post.url}}">{{ post.title }}</a></h2>
+    <h2 class="mb-2"><a href="{{post.url | prepend:site.baseurl}}">{{ post.title }}</a></h2>
     <span class="author mb-3 d-block">{% include author.html author=post.author display="name" %}</span>
 </div>

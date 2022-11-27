@@ -25,7 +25,7 @@ title: Home
                   {% assign feat_post = site.posts | where: "path", post_path | first %}
                   {% if feat_post %}  
                 <div class="swiper-slide">
-                  <a href="{{feat_post.url}}" class="img-bg d-flex align-items-end" style="background-image: url('{{feat_post.image}}');">
+                  <a href="{{feat_post.url | prepend:site.baseurl}}" class="img-bg d-flex align-items-end" style="background-image: url('{{feat_post.image | prepend:site.baseurl}}');">
                     <div class="img-bg-inner">
                       <h2>{{feat_post.title}}</h2>
                       <p>{{feat_post.excerpt | strip_html }}</p>
@@ -99,7 +99,7 @@ title: Home
                     {% for post_path in trending limit: 5 %}
                     <li>
                       {% assign post = site.posts | where: "path", post_path | first %}
-                      <a href="{{post.url}}">
+                      <a href="{{post.url | prepend:site.baseurl}}">
                         <span class="number">{{forloop.index}}</span>
                         <h3>{{post.title}}</h3>
                         {% include author.html author=post.author display="name" %}

@@ -13,7 +13,7 @@
   <span class="author">{{author.name}}</span>
 {% else %}
 <div class="d-flex align-items-center author">
-  <div class="photo"><img src="{{author.image}}" alt="" class="img-fluid"></div>
+  <div class="photo"><img src="{{author.image | prepend:site.baseurl}}" alt="" class="img-fluid"></div>
   <div class="name"><h3 class="m-0 p-0">{{author.name}}</h3></div>
 </div>
 {% endif %}

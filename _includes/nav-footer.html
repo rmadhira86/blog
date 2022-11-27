@@ -7,6 +7,6 @@
 <h3 class="footer-heading">Navigation</h3>
 <ul class="footer-links list-unstyled">
     {% for nav in site.data.navigation.nav-bar %}
-        <li><a href="{% if nav.url %}{{nav.url}}{% else %}#{% endif %}">{{nav.title}}</a></li>
+        <li><a href="{% if nav.url %}{{nav.url | prepend:site.baseurl}}{% else %}#{% endif %}">{{nav.title}}</a></li>
     {% endfor %}
 </ul>

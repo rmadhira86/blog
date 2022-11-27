@@ -8,13 +8,13 @@
     {% for nav in site.data.navigation.nav-bar %}
       {% if nav.type == "categories" %}
           <li class="dropdown">
-            <a href="{% if nav.url %}{{nav.url}}{% else %}#{% endif %}"><span>{{nav.title}}</span> 
+            <a href="{% if nav.url %}{{nav.url | prepend:site.baseurl}}{% else %}#{% endif %}"><span>{{nav.title}}</span> 
                 <i class="bi bi-chevron-down dropdown-indicator"></i>
             </a>
             <ul>
                 {% for cat in sorted_categories %}
                 {% assign catwords = cat | split: "-" %}
-                <li><a href="/{{cat}}">
+                <li><a href="{{site.baseurl}}/{{cat}}">
                     {% for word in catwords %}{{word | capitalize}} {% endfor %}
                 </a></li>
                 {% endfor %}
@@ -22,7 +22,7 @@
           </li>
       {% else %}
         <li class="nav-link scroll-to">
-            <a href="{% if nav.url %}{{nav.url}}{% else %}#{% endif %}">{{nav.title}}</a>
+            <a href="{% if nav.url %}{{nav.url | prepend:site.baseurl}}{% else %}#{% endif %}">{{nav.title}}</a>
         </li>
       {% endif %}
     {% endfor %}
