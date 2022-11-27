@@ -10,7 +10,7 @@
 <ul class="{{list_class}} list-unstyled">
     {% for cat in sorted_categories %}
        {% assign catwords = cat | split: "-" %}
-       <li><a href="/{{cat}}"><i class="bi bi-chevron-right"></i>
+       <li><a href="{{site.baseurl}}/{{cat}}"><i class="bi bi-chevron-right"></i>
         {% for word in catwords %}{{word | capitalize}} {% endfor %}
          [{{site.categories[cat].size}}]
         </a></li> 
