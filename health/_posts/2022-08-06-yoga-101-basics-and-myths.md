@@ -2,6 +2,9 @@
 layout: single
 title: "Yoga: Myths & Basics"
 description: This article dispels common myths about Yoga and provides general guidance for a safe Yoga practice
+video_url: https://www.youtube.com/watch?v=WA9ncn8Eqts
+video_img: /assets/img/blog/yoga_title.jpg
+
 image: /assets/img/health3.jpg
 tags:
   - yoga

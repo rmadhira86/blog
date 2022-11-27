@@ -1,6 +1,6 @@
 {% assign fig_class = include.class | default: "my-4" %}
 <figure class="{{fig_class}}">
-    {% if include.url %}<a href="{{include.url}}">{% endif %}
+    {% if include.url %}<a href="{{include.url}}" target="_blank">{% endif %}
     <img src="{{include.src}}" alt="{{include.alt}}" class="img-fluid">
     {% if include.url %}</a>{% endif %}
     {% if include.caption %}<figcaption>{{include.caption}}</figcaption>{% endif %}
