@@ -20,6 +20,9 @@
 
 title: Manohar Madhira
 tagline: Musings of a Jack of many, master of some
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://rmadhira86.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
 logo: /assets/img/logo.png
 copyright: Manohar Madhira
 email: your-email@example.com
@@ -28,8 +31,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   my thoughts and learning on various fields of life - 
   business operations, health, technology, relations and many more. 
   Come delve in a little, share your thoughts and let us grow together.  
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://manoharmadhira.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 author: manohar
 
